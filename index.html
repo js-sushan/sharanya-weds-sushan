@@ -1,120 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>[Your Names] Wedding</title>
-  <meta name="description" content="You're invited to the wedding of Sharanya & Sushan. Join us for the celebrations!" />
-  <meta property="og:title" content="Sharanya Weds Sushan" />
-  <meta property="og:description" content="Join us for the celebrations!" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/wedding-card.gif" />
-  <meta name="theme-color" content="#b08968" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> Sharanya Weds Sushan </title>
+    <meta name="description"
+          content="You're invited to the wedding of Sharanya & Sushan. Join us for the celebrations!"/>
+    <meta property="og:title" content="Sharanya Weds Sushan"/>
+    <meta property="og:description" content="Join us for the celebrations!"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="assets/wedding-card.gif"/>
+    <meta name="theme-color" content="#b08968"/>
 
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="main.js"></script>
 </head>
 <body>
 
 <header>
-  <nav>
-    <div class="brand"><a href="#top">[Name] &amp; [Name]</a></div>
-    <ul>
-      <li><a href="#countdown">Countdown</a></li>
-      <li><a href="#timeline">Timeline</a></li>
-      <li><a href="#venue">Venue</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#video">Video</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <div class="brand"><a href="#top">[Name] &amp; [Name]</a></div>
+        <ul>
+            <li><a href="#countdown">Countdown</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main id="top">
-  <!-- Hero -->
-  <section class="hero">
-    <img src="assets/wedding-card.gif" alt="Wedding card" />
-    <h1 id="coupleNames">[Name] &amp; [Name]</h1>
-    <div class="subtitle" id="dateAndPlace">[Wedding Date] • [City, Country]</div>
-    <div class="subtitle">We can’t wait to celebrate with you!</div>
-    <a href="#countdown" class="btn">See Details</a>
-  </section>
+    <!-- Hero -->
+    <section class="hero">
+        <img src="assets/wedding-card.gif" alt="Wedding card"/>
+        <h1 id="coupleNames">Sharanya &amp; Sushan</h1>
+        <div class="subtitle" id="dateAndPlace">[5-11-2025] • [Delhi, India]
+        </div>
+        <div class="subtitle">We can’t wait to celebrate with you!</div>
+        <a href="#countdown" class="btn">See Details</a>
+    </section>
 
-  <!-- Countdown -->
-  <section class="container" id="countdown">
-    <h2 class="section-title">Countdown to Our Big Day</h2>
-    <div class="countdown" aria-live="polite">
-      <div class="box">
-        <div class="num" id="days">0</div>
-        <div class="label">Days</div>
-      </div>
-      <div class="box">
-        <div class="num" id="hours">0</div>
-        <div class="label">Hours</div>
-      </div>
-      <div class="box">
-        <div class="num" id="minutes">0</div>
-        <div class="label">Minutes</div>
-      </div>
-      <div class="box">
-        <div class="num" id="seconds">0</div>
-        <div class="label">Seconds</div>
-      </div>
+    <!-- Countdown -->
+    <section class="container" id="countdown">
+        <h2 class="section-title">Countdown to Our Big Day</h2>
+        <div class="countdown" aria-live="polite">
+            <div class="box">
+                <div class="num" id="days">0</div>
+                <div class="label">Days</div>
+            </div>
+            <div class="box">
+                <div class="num" id="hours">0</div>
+                <div class="label">Hours</div>
+            </div>
+            <div class="box">
+                <div class="num" id="minutes">0</div>
+                <div class="label">Minutes</div>
+            </div>
+            <div class="box">
+                <div class="num" id="seconds">0</div>
+                <div class="label">Seconds</div>
+            </div>
+        </div>
+        <p class="center" id="afterCountdownMsg"
+           style="display:none; margin-top:1rem;">
+            The celebrations have begun 🎉
+        </p>
+    </section>
+
+    <!-- Timeline -->
+    <section class="container" id="timeline">
+        <h2 class="section-title">Timeline</h2>
+        <div class="timeline" id="timelineList"></div>
+    </section>
+
+    <!-- Venue -->
+    <section class="container" id="venue">
+        <h2 class="section-title">Venue</h2>
+        <p class="center" id="venueAddress"> Sacred Heart Cathedral, 1, Gol Dak
+            Khana Roundabout, Ashok Place, Sector 4, Gole Market, New Delhi,
+            Delhi 110001</p>
+        <div class="map-wrapper">
+            <iframe
+                    id="mapFrame"
+                    src=""
+                    width="600" height="450" style="border:0;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="center" style="margin-top: 1rem;">
+            <a id="directionLink" href="#" target="_blank" rel="noopener"
+               class="btn">Get Directions</a>
+        </p>
+    </section>
+
+    <!-- Gallery (Optional) -->
+    <section class="container" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- Pre-wedding Video -->
+    <section class="container" id="video">
+        <h2 class="section-title">Pre-Wedding Video</h2>
+        <div class="video-wrapper">
+            <iframe id="videoFrame"
+                    src=""
+                    title="Pre-Wedding Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Simple Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt=""/>
     </div>
-    <p class="center" id="afterCountdownMsg" style="display:none; margin-top:1rem;">
-      The celebrations have begun 🎉
-    </p>
-  </section>
-
-  <!-- Timeline -->
-  <section class="container" id="timeline">
-    <h2 class="section-title">Timeline</h2>
-    <div class="timeline" id="timelineList"></div>
-  </section>
-
-  <!-- Venue -->
-  <section class="container" id="venue">
-    <h2 class="section-title">Venue</h2>
-    <p class="center" id="venueAddress">[Venue Name], [Address]</p>
-    <div class="map-wrapper">
-      <iframe
-        id="mapFrame"
-        src=""
-        width="600" height="450" style="border:0;"
-        allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <p class="center" style="margin-top: 1rem;">
-      <a id="directionLink" href="#" target="_blank" rel="noopener" class="btn">Get Directions</a>
-    </p>
-  </section>
-
-  <!-- Gallery (Optional) -->
-  <section class="container" id="gallery">
-    <h2 class="section-title">Gallery</h2>
-    <div class="gallery-grid" id="galleryGrid"></div>
-  </section>
-
-  <!-- Pre-wedding Video -->
-  <section class="container" id="video">
-    <h2 class="section-title">Pre-Wedding Video</h2>
-    <div class="video-wrapper">
-      <iframe id="videoFrame"
-              src=""
-              title="Pre-Wedding Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <!-- Simple Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <img src="" alt="" />
-  </div>
 
 </main>
 
 <footer>
-  Made with ❤️ by us — see you on the big day!
+    Made with ❤️ by us — see you on the big day!
 </footer>
 
 </body>
