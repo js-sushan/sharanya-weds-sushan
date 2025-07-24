@@ -4,296 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>[Your Names] Wedding</title>
-  <meta name="description" content="You're invited to the wedding of [Name] & [Name]. Join us for the celebrations!" />
-  <meta property="og:title" content="[Your Names] Wedding" />
+  <meta name="description" content="You're invited to the wedding of Sharanya & Sushan. Join us for the celebrations!" />
+  <meta property="og:title" content="Sharanya Weds Sushan" />
   <meta property="og:description" content="Join us for the celebrations!" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/wedding-card.gif" /> <!-- TODO: update -->
+  <meta property="og:image" content="assets/wedding-card.gif" />
   <meta name="theme-color" content="#b08968" />
 
-  <style>
-    :root {
-      --bg: #fffaf6;
-      --text: #2d2a26;
-      --muted: #6b6b6b;
-      --accent: #b08968;
-      --accent-dark: #8a6c52;
-      --maxw: 960px;
-      --radius: 16px;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a {
-      color: var(--accent-dark);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 5;
-      background: rgba(255, 250, 246, 0.8);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid #e2d6cd;
-    }
-
-    nav {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.75rem 1rem;
-      font-weight: 500;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: 2.5rem 1rem;
-    }
-
-    .hero {
-      display: grid;
-      place-items: center;
-      min-height: 80vh;
-      text-align: center;
-      background: radial-gradient(circle at top, #fff2e9, var(--bg));
-      padding: 4rem 1rem 2rem;
-    }
-
-    .hero img {
-      max-width: 320px;
-      width: 100%;
-      border-radius: var(--radius);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-      margin-bottom: 1.5rem;
-    }
-
-    h1, h2, h3 {
-      font-family: "Georgia", "Times New Roman", serif;
-      letter-spacing: 0.4px;
-      margin: 0 0 1rem;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 6vw, 3.5rem);
-      color: var(--accent-dark);
-    }
-
-    .subtitle {
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-
-    .countdown {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 2rem 0 0;
-      flex-wrap: wrap;
-    }
-
-    .countdown .box {
-      min-width: 90px;
-      text-align: center;
-      background: #fff;
-      border-radius: var(--radius);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-      padding: 0.75rem 1rem;
-    }
-
-    .countdown .num {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: var(--accent-dark);
-      line-height: 1.2;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    /* Timeline */
-    .timeline {
-      position: relative;
-      margin: 2rem 0;
-      padding-left: 1rem;
-    }
-    .timeline::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 1.1rem;
-      width: 2px;
-      height: 100%;
-      background: #e2d6cd;
-    }
-    .event {
-      position: relative;
-      padding: 1rem 1rem 1rem 2.25rem;
-      margin-bottom: 1rem;
-      background: #fff;
-      border-radius: var(--radius);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    }
-    .event::before {
-      content: "";
-      position: absolute;
-      left: 0.6rem;
-      top: 1.35rem;
-      width: 12px;
-      height: 12px;
-      background: var(--accent);
-      border-radius: 50%;
-      box-shadow: 0 0 0 3px #fff;
-    }
-    .event h3 {
-      margin: 0 0 0.25rem;
-      color: var(--accent-dark);
-    }
-    .event .time {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 0.5rem;
-    }
-
-    /* Map */
-    .map-wrapper {
-      border: 0;
-      width: 100%;
-      height: 420px;
-      border-radius: var(--radius);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-      overflow: hidden;
-    }
-
-    /* Video */
-    .video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: var(--radius);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-    }
-    .video-wrapper iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: 0;
-    }
-
-    /* Gallery */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 0.75rem;
-    }
-    .gallery-grid img {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: var(--radius);
-      cursor: pointer;
-      transition: transform 0.15s;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    }
-    .gallery-grid img:hover {
-      transform: scale(1.02);
-    }
-
-    /* Lightbox (simple) */
-    .lightbox {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.8);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 999;
-    }
-    .lightbox img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: var(--radius);
-      box-shadow: 0 0 32px rgba(0,0,0,0.4);
-    }
-    .lightbox.active {
-      display: flex;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem 3rem;
-      color: var(--muted);
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      border: 0;
-      border-radius: 9999px;
-      padding: 0.6rem 1.25rem;
-      font-weight: 600;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.08s ease;
-    }
-    .btn:hover {
-      transform: translateY(-1px);
-      background: var(--accent-dark);
-    }
-    .center {
-      text-align: center;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1a19;
-        --text: #f3efe9;
-        --muted: #a8a29e;
-        --accent: #d4a373;
-        --accent-dark: #f2b880;
-      }
-      header {
-        background: rgba(28,26,25,0.85);
-        border-bottom-color: #2b2826;
-      }
-      .event, .countdown .box, .hero img {
-        background: #262321;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-      }
-      .map-wrapper, .video-wrapper, .gallery-grid img {
-        box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
 </head>
 <body>
 
@@ -313,7 +32,6 @@
 <main id="top">
   <!-- Hero -->
   <section class="hero">
-    <!-- TODO: Replace GIF path -->
     <img src="assets/wedding-card.gif" alt="Wedding card" />
     <h1 id="coupleNames">[Name] &amp; [Name]</h1>
     <div class="subtitle" id="dateAndPlace">[Wedding Date] • [City, Country]</div>
@@ -350,7 +68,7 @@
   <!-- Timeline -->
   <section class="container" id="timeline">
     <h2 class="section-title">Timeline</h2>
-    <div class="timeline" id="timelineList"><!-- JS will inject events --></div>
+    <div class="timeline" id="timelineList"></div>
   </section>
 
   <!-- Venue -->
@@ -358,7 +76,6 @@
     <h2 class="section-title">Venue</h2>
     <p class="center" id="venueAddress">[Venue Name], [Address]</p>
     <div class="map-wrapper">
-      <!-- TODO: Replace with your Google Maps embed -->
       <iframe
         id="mapFrame"
         src=""
@@ -374,7 +91,7 @@
   <!-- Gallery (Optional) -->
   <section class="container" id="gallery">
     <h2 class="section-title">Gallery</h2>
-    <div class="gallery-grid" id="galleryGrid"><!-- JS injects images --></div>
+    <div class="gallery-grid" id="galleryGrid"></div>
   </section>
 
   <!-- Pre-wedding Video -->
@@ -399,161 +116,6 @@
 <footer>
   Made with ❤️ by us — see you on the big day!
 </footer>
-
-<script>
-  // ===== CONFIG =====
-  const CONFIG = {
-    coupleNames: "Aarav & Meera",                           // TODO
-    dateAndPlace: "December 20, 2025 • Bengaluru, India",   // TODO
-    weddingDate: "2025-12-20T10:00:00+05:30",               // TODO: Set your exact time (IST shown)
-    venue: {
-      name: "The Grand Palace",
-      address: "123 MG Road, Bengaluru, Karnataka 560001",
-      // Google Maps EMBED URL (from 'Share' -> 'Embed a map')
-      mapEmbedUrl: "https://www.google.com/maps/embed?pb=...", // TODO
-      // For 'Get Directions' button (regular maps URL is fine)
-      directionUrl: "https://maps.google.com/?q=The+Grand+Palace+Bengaluru" // TODO
-    },
-    videoEmbedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // TODO
-    timeline: [
-      {
-        title: "Haldi",
-        date: "December 18, 2025",
-        time: "10:00 AM",
-        location: "Bride's Residence",
-        description: "Join us for the auspicious Haldi ceremony."
-      },
-      {
-        title: "Sangeet",
-        date: "December 19, 2025",
-        time: "7:00 PM",
-        location: "The Grand Palace Lawn",
-        description: "An evening of music, dance, and celebration."
-      },
-      {
-        title: "Wedding",
-        date: "December 20, 2025",
-        time: "10:00 AM",
-        location: "The Grand Palace Main Hall",
-        description: "The wedding ceremony."
-      },
-      {
-        title: "Reception",
-        date: "December 21, 2025",
-        time: "7:30 PM",
-        location: "The Grand Palace Ballroom",
-        description: "Dinner & celebration with family and friends."
-      }
-    ],
-    gallery: [
-      // TODO: Add your image paths here (remove or leave empty to hide the gallery section content)
-      "assets/gallery1.jpg",
-      "assets/gallery2.jpg",
-      "assets/gallery3.jpg",
-      "assets/gallery4.jpg",
-      "assets/gallery5.jpg"
-    ]
-  };
-
-  // ===== UTIL =====
-  function $(sel) { return document.querySelector(sel); }
-  function createEl(tag, attrs = {}, children = []) {
-    const el = document.createElement(tag);
-    Object.entries(attrs).forEach(([k, v]) => {
-      if (k === "class") el.className = v;
-      else if (k.startsWith("on") && typeof v === "function") el.addEventListener(k.substring(2), v);
-      else el.setAttribute(k, v);
-    });
-    children.forEach(child => {
-      if (typeof child === "string") el.appendChild(document.createTextNode(child));
-      else el.appendChild(child);
-    });
-    return el;
-  }
-
-  // ===== Populate Static Text =====
-  $('#coupleNames').textContent = CONFIG.coupleNames;
-  $('#dateAndPlace').textContent = CONFIG.dateAndPlace;
-  $('#venueAddress').textContent = `${CONFIG.venue.name}, ${CONFIG.venue.address}`;
-  $('#mapFrame').src = CONFIG.venue.mapEmbedUrl;
-  $('#directionLink').href = CONFIG.venue.directionUrl;
-  $('#videoFrame').src = CONFIG.videoEmbedUrl;
-
-  // ===== Timeline Render =====
-  const timelineList = $('#timelineList');
-  CONFIG.timeline.forEach(ev => {
-    const el = createEl('div', { class: 'event' }, [
-      createEl('h3', {}, [ev.title]),
-      createEl('div', { class: 'time' }, [`${ev.date} • ${ev.time}`]),
-      createEl('div', { class: 'location' }, [ev.location]),
-      ev.description ? createEl('p', {}, [ev.description]) : null
-    ].filter(Boolean));
-    timelineList.appendChild(el);
-  });
-
-  // ===== Gallery Render + Lightbox =====
-  const galleryGrid = $('#galleryGrid');
-  const lightbox = $('#lightbox');
-  const lightboxImg = lightbox.querySelector('img');
-
-  function openLightbox(src) {
-    lightboxImg.src = src;
-    lightbox.classList.add('active');
-  }
-  function closeLightbox() {
-    lightbox.classList.remove('active');
-    lightboxImg.src = "";
-  }
-
-  if (CONFIG.gallery && CONFIG.gallery.length > 0) {
-    CONFIG.gallery.forEach(src => {
-      const img = createEl('img', { src, alt: "Gallery image", onclick: () => openLightbox(src) });
-      galleryGrid.appendChild(img);
-    });
-  } else {
-    // If no gallery images, you can hide the section if desired:
-    // $('#gallery').style.display = 'none';
-  }
-
-  lightbox.addEventListener('click', closeLightbox);
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeLightbox();
-  });
-
-  // ===== Countdown =====
-  const weddingTime = new Date(CONFIG.weddingDate).getTime();
-  const daysEl = $('#days');
-  const hoursEl = $('#hours');
-  const minutesEl = $('#minutes');
-  const secondsEl = $('#seconds');
-  const afterMsg = $('#afterCountdownMsg');
-
-  function tick() {
-    const now = Date.now();
-    let diff = Math.max(0, weddingTime - now);
-
-    if (diff <= 0) {
-      daysEl.textContent = hoursEl.textContent = minutesEl.textContent = secondsEl.textContent = '0';
-      afterMsg.style.display = 'block';
-      clearInterval(interval);
-      return;
-    }
-
-    const seconds = Math.floor(diff / 1000);
-    const days = Math.floor(seconds / (3600 * 24));
-    const hours = Math.floor((seconds % (3600 * 24)) / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
-    const secs = seconds % 60;
-
-    daysEl.textContent = days;
-    hoursEl.textContent = hours;
-    minutesEl.textContent = minutes;
-    secondsEl.textContent = secs;
-  }
-
-  const interval = setInterval(tick, 1000);
-  tick(); // initial run
-</script>
 
 </body>
 </html>
