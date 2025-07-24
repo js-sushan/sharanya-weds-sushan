@@ -42,11 +42,11 @@ const CONFIG = {
   ],
   gallery: [
     // TODO: Add your image paths here
-    "assets/gallery1.jpg",
-    "assets/gallery2.jpg",
-    "assets/gallery3.jpg",
-    "assets/gallery4.jpg",
-    "assets/gallery5.jpg"
+    "assets/1.jpg",
+    "assets/2.jpg",
+    "assets/3.jpg",
+    "assets/4.jpg",
+    "assets/5.jpg"
   ]
 };
 
