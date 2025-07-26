@@ -13,7 +13,22 @@
     <meta name="theme-color" content="#b08968"/>
 
     <link rel="stylesheet" href="style.css"/>
-    <script defer src="main.js"></script>
+    <script>
+        (function () {
+          const v = new Date(document.lastModified).getTime();
+
+          const css = document.createElement('link');
+          css.rel = 'stylesheet';
+          css.href = 'style.css?v=' + v;
+          document.head.appendChild(css);
+
+          const js = document.createElement('script');
+          js.defer = true;
+          js.src = 'main.js?v=' + v;
+          document.head.appendChild(js);
+        })();
+    </script>
+
 </head>
 <body>
 
@@ -120,7 +135,7 @@
 </main>
 
 <footer>
-    Made with ❤ by su ❤️ sha  — see you on the big day!
+    Made with ❤ by su ❤️ sha — see you on the big day!
 </footer>
 
 </body>
