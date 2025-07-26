@@ -1,11 +1,11 @@
 // ===== CONFIG =====
 const CONFIG = {
-  coupleNames: "Aarav & Meera",                           // TODO
-  dateAndPlace: "December 20, 2025 • Bengaluru, India",   // TODO
+  coupleNames: "Sharanya & Sushan",                           // TODO
+  dateAndPlace: "November 5, 2025 • New Delhi, India",   // TODO
   weddingDate: "2025-12-20T10:00:00+05:30",               // TODO (IST example)
   venue: {
-    name: "The Grand Palace",
-    address: "123 MG Road, Bengaluru, Karnataka 560001",
+    name: "Sacred Heart Cathedral",
+    address: "1, Gol Dak Khana Roundabout, Ashok Place, Sector 4, Gole Market, New Delhi, Delhi 110001",
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=...", // TODO
     directionUrl: "https://maps.google.com/?q=The+Grand+Palace+Bengaluru" // TODO
   },
