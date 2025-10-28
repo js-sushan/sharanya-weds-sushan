@@ -1,7 +1,8 @@
 <div align="center">
 
-<!-- 🌺 Top Decorative Border -->
-<img src="https://raw.githubusercontent.com/js-sushan/sharanya-weds-sushan/main/05d113c5-270d-4c12-8496-3baae86a0cfa.png" width="100%" alt="wedding floral border" />
+<!-- 🌸 Top Floral Border -->
+<img src="https://t3.ftcdn.net/jpg/05/22/05/26/360_F_522052682_tfMSvNsOqjRsnhGUsYJFj7urFntravtu.jpg" 
+     width="100%" alt="floral border" />
 
 <br/>
 
@@ -26,4 +27,23 @@
 #### 📅 **Date:**  
 **5th November, 2025**
 
-#### ⛪ **Holy Mass:**
+#### ⛪ **Holy Mass:**  
+**2:30 PM**
+
+#### 🎉 **Reception:**  
+**6 PM onwards**
+
+---
+
+### 💖 Thank you for your love, prayers, and blessings! 💖  
+### 🕊️ With love,  
+**Sharanya & Sushan**
+
+---
+
+<!-- 🌸 Bottom Floral Border (flipped) -->
+<img src="https://t3.ftcdn.net/jpg/05/22/05/26/360_F_522052682_tfMSvNsOqjRsnhGUsYJFj7urFntravtu.jpg" 
+     width="100%" alt="floral border" 
+     style="transform: rotate(180deg); margin-top: 10px;" />
+
+</div>
