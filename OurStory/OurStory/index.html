@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+ <html class="no-js"> 
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sushan weds Sharanya</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sushan weds Sharanya" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="Sharanya" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Estonia&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Parisienne&family=Prata&family=Quintessential&display=swap" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/countdown.css">
+	<link rel="stylesheet" href="css/card.css">
+	<link rel="stylesheet" href="css/navigation.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/servicearea.css">
+	<link rel="stylesheet" href="css/event.css">
+	<link rel="stylesheet" href="css/gallery.css">
+	
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script>
+		function updateCountdown() {
+		const target = new Date("2025-11-05T09:30:00Z"); // 3:00 PM IST in UTC
+		const now = new Date();
+		const diff = target - now;
+
+		if (diff <= 0) {
+			document.getElementById("days").textContent = "00";
+			document.getElementById("hours").textContent = "00";
+			document.getElementById("minutes").textContent = "00";
+			document.getElementById("seconds").textContent = "00";
+			clearInterval(interval);
+			return;
+		}
+
+		const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+		const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+		const minutes = Math.floor((diff / (1000 * 60)) % 60);
+		const seconds = Math.floor((diff / 1000) % 60);
+
+		document.getElementById("days").textContent = days;
+		document.getElementById("hours").textContent = hours;
+		document.getElementById("minutes").textContent = minutes;
+		document.getElementById("seconds").textContent = seconds;
+		}
+
+		const interval = setInterval(updateCountdown, 1000);
+		updateCountdown();
+  	</script>
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+
+	<!--Navigation-->
+	<!-- <nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					
+					<a href="index.html">
+						<div id="logo-img">
+							<img src="./images/Logo.png"/>
+						</div>
+					</a>
+					
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">Story</a></li>
+						<li class="has-dropdown">
+							<a href="gallery.html">Gallery</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav> -->
+
+	<!--timer and save the date-->
+	<header id="fh5co-header" class="fh5co-cover" role="banner"  data-stellar-background-ratio="0.5">
+		<!-- Background Video -->
+		<video autoplay muted playsinline id="header-video">
+			<!-- <source src="videos/header-bg.mp4" type="video/mp4" media="orientation: landscape"> -->
+			<source src="videos/header-potrait.mp4" type="video/mp4" >
+			<!-- fallback image -->
+			<img src="images/header-bg.jpg" alt="Background">
+		</video>
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<img src="./images/Logo.png"/>
+							<h1 class="header-text">Sushan &amp; Sharanya</h1>
+							<h2 class="secondary-text header-text">We Are Getting Married !</h2>
+							<div class="countdown-container">
+								<div class="countdown-item">
+									<div class="number" id="days">00</div>
+									<div class="label">DAYS</div>
+								</div>
+								<div class="countdown-item">
+									<div class="number" id="hours">00</div>
+									<div class="label">HOUR</div>
+								</div>
+								<div class="countdown-item">
+									<div class="number" id="minutes">00</div>
+									<div class="label">MINUTES</div>
+								</div>
+								<div class="countdown-item">
+									<div class="number" id="seconds">00</div>
+									<div class="label">SECONDS</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--Couple description-->
+	<div id="fh5co-couple">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Welcome!</h2>
+					<h3 class="date-text">November 5th, 2025</h3>
+					<p class="tertiary-text">Sacred Heart Cathedral, New Delhi</p>
+				</div>
+			</div>
+			<div class="couple-wrap animate-box">
+				<div class="couple-half">
+					<div class="groom">
+						<img src="images/groom.jpg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-groom">
+						<h3>Sushan J S</h3>
+						<p class="tertiary-text">A charismatic and fun-loving soul, he’s strong, handsome, and full of life.
+						Passionate about music, a gifted singer and dancer, he’s cherished by everyone around him.
+						</p>
+					</div>
+				</div>
+				<p class="heart text-center"><i class="icon-heart2"></i></p>
+				<div class="couple-half">
+					<div class="bride">
+						<img src="images/bride.jpg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-bride">
+						<h3>Sharanya</h3>
+						<p class="tertiary-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Event Details-->
+	<div id="fh5co-event" class="fh5co-bg" style="background-image: url(images/event-bg-potrait.jpg);">
+		 
+		<div class="overlay"></div>
+		<div class="container">
+			 <!-- Services Area Start-->
+        <div class="service-area ">
+            <div class="container">
+				<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Event Details</span>
+				</div>
+			</div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="singl-services text-center mb-60">
+                            <div class="top-caption">
+                                <h4>Madhuramveppu</h4>
+                                <p class="date-text">November 4, 2025</p>
+                            </div>
+                            <div class="services-img">
+								<div class="back-flower">
+                                    <img src="./images/frame.png" alt="">
+                                </div>
+                                <img src="./images/Haldi.png" alt="">
+                            </div>
+                            <div class="bottom-caption">
+                                <span>3:00 PM - 5:00 PM</span>
+                                <p >Groom's House. Gurugram.</p>
+                            </div>
+                        </div> 
+                    </div>
+					<div class="divider"></div>
+					<div class="col-lg-4">
+                        <div class="singl-services text-center mb-60">
+                            <div class="top-caption">
+                                <h4>Sangeet</h4>
+                                <p class="date-text">November 4, 2025</p>
+                            </div>
+                            <div class="services-img">
+                                <img src="./images/Sangeet.png" alt="">
+                                <div class="back-flower">
+                                    <img src="./images/Frame.png" alt="">
+                                </div>
+                            </div>
+                            <div class="bottom-caption">
+                                <span>12:00PM-2:00PM</span>
+                                <p >Groom's House. Gurugram.</p>
+                            </div>
+                        </div> 
+                    </div>
+					<div class="divider"></div>
+					<div class="col-lg-4">
+                        <div class="singl-services text-center mb-60">
+                            <div class="top-caption">
+                                <h4 >Reception</h4>
+                                <p class="date-text">November 5, 2025</p>
+                            </div>
+                            <div class="services-img">
+                                <img src="./images/Reception.png" alt="">
+								<div class="back-flower">
+                                    <img src="./images/Frame.png" alt="">
+                                </div>
+                            </div>
+                            <div class="bottom-caption">
+                                <span>12:00PM-2:00PM</span>
+                                <p >Sacred Heart Cathedral. New Delhi</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!-- Services Area End-->
+		</div>
+	</div>
+
+	<!--Gallery-->
+	<div id="fh5co-gallery" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Our Memories</span>
+					<h2>Wedding Gallery</h2>
+					<p>Capturing every magical moment of our special day, where love and joy come alive.</p>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-12">
+					<ul id="fh5co-gallery-list">
+						
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); "> 
+						<a href="images/gallery-1.jpg">
+							<div class="case-studies-summary">
+								<span>14 Photos</span>
+								<h2>Two Glas of Juice</h2>
+							</div>
+						</a>
+					</li>
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg); ">
+						<a href="#" class="color-2">
+							<div class="case-studies-summary">
+								<span>30 Photos</span>
+								<h2>Timer starts now!</h2>
+							</div>
+						</a>
+					</li>
+
+
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg); ">
+						<a href="#" class="color-3">
+							<div class="case-studies-summary">
+								<span>90 Photos</span>
+								<h2>Beautiful sunset</h2>
+							</div>
+						</a>
+					</li>
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-4.jpg); ">
+						<a href="#" class="color-4">
+							<div class="case-studies-summary">
+								<span>12 Photos</span>
+								<h2>Company's Conference Room</h2>
+							</div>
+						</a>
+					</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-5.jpg); ">
+							<a href="#" class="color-3">
+								<div class="case-studies-summary">
+									<span>50 Photos</span>
+									<h2>Useful baskets</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-6.jpg); ">
+							<a href="#" class="color-4">
+								<div class="case-studies-summary">
+									<span>45 Photos</span>
+									<h2>Skater man in the road</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-7.jpg); ">
+							<a href="#" class="color-4">
+								<div class="case-studies-summary">
+									<span>35 Photos</span>
+									<h2>Two Glas of Juice</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-8.jpg); "> 
+							<a href="#" class="color-5">
+								<div class="case-studies-summary">
+									<span>90 Photos</span>
+									<h2>Timer starts now!</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-9.jpg); ">
+							<a href="#" class="color-6">
+								<div class="case-studies-summary">
+									<span>56 Photos</span>
+									<h2>Beautiful sunset</h2>
+								</div>
+							</a>
+						</li>
+					</ul>		
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Pre wedding video-->
+	<div id="fh5co-services" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);" style="display: none;">
+		<div class="container" style="display: none;">
+			<div class="row">
+				<div class="text-center fh5co-heading animate-box">
+					<h2 class="secondary-text">Pre wedding Shoot!</h2>
+					<h3 class="tertiary-text">Our story, before you</h3>
+				</div>
+			</div>
+			<div class="animate-box">
+				<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
+					<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
+					<div class="overlay"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-services">
+		<div class="container">
+			<div class="row">
+				<div class=" text-center fh5co-heading animate-box">
+					<h2 class="secondary-text">Where?</h2>
+					<p class="tertiary-text">Sacred Heart Cathedral, New Delhi</p>
+				</div>
+			</div>
+			<div class="row  justify-content-center text-center">
+				<div class="fadeIn" data-wow-delay="0.2s">
+					<iframe 
+					style="width: 100%;height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.039384616081!2d77.20414857604557!3d28.628581684259085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd4e05fb806d%3A0xa90f1a48351fa74!2sSacred%20Heart%20Cathedral!5e0!3m2!1sen!2sin!4v1755052938059!5m2!1sen!2sin"
+					loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        		</div>
+			</div>
+		</div>
+	</div>
+
+	<!--looking forward-->
+	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/looking-forward.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Looking forward to your presence</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Footer-->
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2025 | Sushan weds Sharanya.</small> 	
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	<script>
+   
+</script>
+
+	</body>
+</html>
+

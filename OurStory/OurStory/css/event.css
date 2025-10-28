@@ -1,0 +1,68 @@
+#fh5co-event {
+  float: left;
+  position: relative;
+  padding: 80px 0;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+#fh5co-event,
+.fh5co-bg {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#fh5co-event {
+  float: left;
+}
+
+/* Background video */
+/* #fh5co-event video#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  transform: translate(-50%, -50%);
+  object-fit: contain;   
+  background-color: rgb(230, 234, 237);
+} */
+
+/* Dark overlay for readability */
+#fh5co-event .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.55);
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  #fh5co-event {
+    height: inherit;
+    padding: 7em 0;
+  }
+}
+
+#fh5co-event .bg-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;   /* Behind overlay & content */
+}
+
+#fh5co-event .bg-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* acts like background-size: cover */
+}
