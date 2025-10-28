@@ -1,6 +1,11 @@
 <div align="center">
 
-<img src="https://em-content.zobj.net/source/microsoft-teams/363/wedding_1f492.png" width="100" />
+<!-- 💐 Top Decorative Border -->
+<img src="https://i.imgur.com/W6g6VJv.png" width="100%" alt="floral border" />
+
+<br/>
+
+<img src="https://em-content.zobj.net/source/microsoft-teams/363/wedding_1f492.png" width="120" />
 
 # 💍 Sharanya ❤️ Sushan 💍
 
@@ -8,8 +13,16 @@
 
 ---
 
-### 💌 [**Click Here to View Our Wedding Invitation**](https://js-sushan.github.io/sharanya-weds-sushan/)  
-*(Opens our official wedding website)*
+<!-- 🌸 Scroll Animation -->
+<img src="https://media.giphy.com/media/26tknCqiJrBQG6bxC/giphy.gif" width="80" alt="scroll down" />
+
+---
+
+### 💌 **Join Our Celebration Below**
+
+<a href="https://js-sushan.github.io/sharanya-weds-sushan/" target="_blank">
+  <img src="https://img.shields.io/badge/💖_Click_Here_to_View_Our_Wedding_Website-FF69B4?style=for-the-badge" />
+</a>
 
 ---
 
@@ -33,6 +46,7 @@
 
 ---
 
-<sub>💐 *Made with love and gratitude — see you at the celebration!* 💐</sub>
+<!-- 🌺 Bottom Decorative Border -->
+<img src="https://i.imgur.com/W6g6VJv.png" width="100%" alt="floral border" />
 
 </div>
