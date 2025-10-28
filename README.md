@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- 💐 Top Decorative Border -->
-<img src="https://i.imgur.com/W6g6VJv.png" width="100%" alt="floral border" />
+<!-- 🌺 Top Decorative Border -->
+<img src="https://raw.githubusercontent.com/js-sushan/sharanya-weds-sushan/main/05d113c5-270d-4c12-8496-3baae86a0cfa.png" width="100%" alt="wedding floral border" />
 
 <br/>
 
@@ -13,13 +13,7 @@
 
 ---
 
-<!-- 🌸 Scroll Animation -->
-<img src="https://media.giphy.com/media/26tknCqiJrBQG6bxC/giphy.gif" width="80" alt="scroll down" />
-
----
-
-### 💌 **Join Our Celebration Below**
-
+<!-- 💌 Website Button -->
 <a href="https://js-sushan.github.io/sharanya-weds-sushan/" target="_blank">
   <img src="https://img.shields.io/badge/💖_Click_Here_to_View_Our_Wedding_Website-FF69B4?style=for-the-badge" />
 </a>
@@ -32,21 +26,4 @@
 #### 📅 **Date:**  
 **5th November, 2025**
 
-#### ⛪ **Holy Mass:**  
-**2:30 PM**
-
-#### 🎉 **Reception:**  
-**6 PM onwards**
-
----
-
-### 💖 Thank you for your love, prayers, and blessings! 💖  
-### 🕊️ With love,  
-**Sharanya & Sushan**
-
----
-
-<!-- 🌺 Bottom Decorative Border -->
-<img src="https://i.imgur.com/W6g6VJv.png" width="100%" alt="floral border" />
-
-</div>
+#### ⛪ **Holy Mass:**
